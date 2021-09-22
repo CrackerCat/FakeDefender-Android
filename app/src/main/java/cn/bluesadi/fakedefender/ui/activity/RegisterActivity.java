@@ -46,23 +46,23 @@ public class RegisterActivity extends BaseActivity {
         String repeatPassword = etRepeatPassword.getText().toString();
         Matcher matcher = EMAIL_PATTERN.matcher(email);
         if(!matcher.matches()){
-            toast(getString(R.string.tx_email_invaild));
+            toast(getString(R.string.email_invalid));
             return;
         }
         if(!password.equals(repeatPassword)){
-            toast(getString(R.string.tx_password_not_match));
+            toast(getString(R.string.password_not_match));
             return;
         }
         if(password.length() < 8){
-            toast(getString(R.string.tx_password_not_strong));
+            toast(getString(R.string.password_not_strong));
             return;
         }
         AuthLib.sendRegisterRequest(email, password, response -> {
             if(response.isSuccess()){
-                toast(getString(R.string.tx_register_success));
+                toast(getString(R.string.register_success));
                 startActivity(LoginActivity.class);
             }else{
-                toast(getString(R.string.tx_register_fail));
+                toast(getString(R.string.register_fail));
             }
         });
     }

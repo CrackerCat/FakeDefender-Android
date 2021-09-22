@@ -54,7 +54,7 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/tx_settings"
+                    android:text="@string/settings"
                     android:textSize="15sp"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -74,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/tx_upload"
+                    android:text="@string/upload"
                     android:textSize="15sp"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -95,14 +95,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tx_screen_monitoring"
+            android:text="@string/monitor_service"
             android:textSize="16sp"
             android:textColor="@color/gray" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="@string/tx_current_running"
+            android:text="@string/running_time"
             android:textSize="25sp"
             android:layout_gravity="center" />
 
@@ -117,7 +117,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/tx_placeholder"
+                android:text="@string/placeholder"
                 android:textSize="50sp"
                 android:textStyle="bold"
                 android:singleLine="true"
@@ -129,7 +129,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/tx_placeholder"
+                android:text="@string/placeholder"
                 android:textSize="50sp"
                 android:textStyle="bold"
                 android:singleLine="true"
@@ -141,7 +141,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/tx_placeholder"
+                android:text="@string/placeholder"
                 android:textSize="50sp"
                 android:textStyle="bold"
                 android:singleLine="true"
@@ -158,7 +158,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_hour"
+                android:text="@string/hour"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:singleLine="true"
@@ -170,7 +170,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_minute"
+                android:text="@string/minute"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:singleLine="true"
@@ -182,7 +182,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_second"
+                android:text="@string/second"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:singleLine="true"
@@ -198,7 +198,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/btn_run"
+            android:text="@string/run"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -211,7 +211,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/btn_terminate"
+            android:text="@string/terminate"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -231,7 +231,7 @@
             android:id="@+id/tx_monitoring_history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tx_check_record"
+            android:text="@string/check_record"
             android:textSize="16sp"
             android:textColor="@color/gray" />
 

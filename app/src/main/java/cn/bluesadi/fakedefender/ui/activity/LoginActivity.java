@@ -44,10 +44,10 @@ public class LoginActivity extends BaseActivity {
         String password = etPassword.getText().toString();
         AuthLib.sendLoginRequest(email, password, response -> {
             if(response.isSuccess()){
-                toast(getString(R.string.tx_login_success));
+                toast(getString(R.string.login_success));
                 startActivity(MainActivity.class);
             }else{
-                toast(getString(R.string.tx_login_fail));
+                toast(getString(R.string.login_fail));
             }
         });
     }

@@ -8,7 +8,7 @@
         android:id="@+id/tx_check_result_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tx_check_result_title"
+        android:text="@string/check_result_title"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tx_preview"
+            android:text="@string/preview"
             android:textSize="16sp"
             android:textColor="@color/gray" />
 
@@ -47,7 +47,7 @@
         android:layout_alignParentBottom="true"
         android:layout_height="50dp"
         android:background="@drawable/btn_blue"
-        android:text="@string/btn_result_save"
+        android:text="@string/save_result"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/white" />

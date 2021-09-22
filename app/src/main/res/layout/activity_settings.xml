@@ -8,7 +8,7 @@
         android:id="@+id/tx_settings_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tx_settings_title"
+        android:text="@string/settings_title"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tx_advance_settings"
+            android:text="@string/advance_settings"
             android:textSize="16sp"
             android:textColor="@color/gray" />
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:layout_marginTop="8dp"
-            android:text="@string/tx_check_period"
+            android:text="@string/check_period"
             android:textSize="18sp" />
 
         <RadioGroup
@@ -50,19 +50,19 @@
                 android:id="@+id/rb_long_period"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_long_period"/>
+                android:text="@string/long_period"/>
 
             <RadioButton
                 android:id="@+id/rb_middle_period"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_middle_period"/>
+                android:text="@string/middle_period"/>
 
             <RadioButton
                 android:id="@+id/rb_short_period"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_short_period"/>
+                android:text="@string/short_period"/>
         </RadioGroup>
 
 
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="@string/tx_check_threshold"
+            android:text="@string/check_threshold"
             android:textSize="18sp" />
 
         <RadioGroup
@@ -83,19 +83,19 @@
                 android:id="@+id/rb_high_threshold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_high_threshold"/>
+                android:text="@string/high_threshold"/>
 
             <RadioButton
                 android:id="@+id/rb_middle_threshold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_middle_threshold"/>
+                android:text="@string/middle_threshold"/>
 
             <RadioButton
                 android:id="@+id/rb_low_threshold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tx_low_threshold"/>
+                android:text="@string/low_threshold"/>
         </RadioGroup>
 
     </LinearLayout>
@@ -107,7 +107,7 @@
         android:layout_alignParentBottom="true"
         android:layout_height="50dp"
         android:background="@drawable/btn_blue"
-        android:text="@string/btn_settings_save"
+        android:text="@string/save_settings"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/white" />

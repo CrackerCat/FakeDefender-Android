@@ -7,11 +7,11 @@ public class UIHelper {
 
     public static String getTagByScore(double score){
         if(score >= Settings.threshold){
-            return BaseActivity.getTopActivity().getString(R.string.tx_high_risk);
+            return BaseActivity.getTopActivity().getString(R.string.high_risk);
         }else if(score >= Settings.secondaryThreshold){
-            return BaseActivity.getTopActivity().getString(R.string.tx_middle_risk);
+            return BaseActivity.getTopActivity().getString(R.string.middle_risk);
         }else{
-            return BaseActivity.getTopActivity().getString(R.string.tx_low_risk);
+            return BaseActivity.getTopActivity().getString(R.string.low_risk);
         }
     }
 
@@ -27,9 +27,9 @@ public class UIHelper {
 
     public static String getTagByManual(boolean manual){
         if(manual){
-            return BaseActivity.getTopActivity().getString(R.string.tx_manual);
+            return BaseActivity.getTopActivity().getString(R.string.manual);
         }else{
-            return BaseActivity.getTopActivity().getString(R.string.tx_auto);
+            return BaseActivity.getTopActivity().getString(R.string.auto);
         }
     }
 

@@ -77,6 +77,6 @@ public class SettingsActivity extends BaseActivity {
         Settings.save();
 
         startActivity(MainActivity.class);
-        toast(getString(R.string.tx_settings_saved));
+        toast(getString(R.string.settings_saved));
     }
 }

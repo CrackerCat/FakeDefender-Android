@@ -43,6 +43,6 @@ public class ResultActivity extends BaseActivity {
 
     public void saveResultImage(View view){
         FakeChecker.getInstance().getRecord(index).saveImage();
-        toast(getString(R.string.tx_saved_result));
+        toast(getString(R.string.result_saved));
     }
 }

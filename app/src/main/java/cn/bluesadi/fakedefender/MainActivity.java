@@ -118,7 +118,7 @@ public class MainActivity extends BaseActivity {
                     Uri imageUri = data.getData();
                     InputStream imageStream = getContentResolver().openInputStream(imageUri);
                     Bitmap bitmap = BitmapFactory.decodeStream(imageStream);
-                    ProgressDialog dialog = ProgressDialog.show(this, "", getString(R.string.tx_checking));
+                    ProgressDialog dialog = ProgressDialog.show(this, "", getString(R.string.checking));
                     FakeChecker.getInstance().check(bitmap, response -> {
                         dialog.dismiss();
                         Bundle bundle = new Bundle();
