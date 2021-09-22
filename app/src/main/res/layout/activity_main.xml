@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_toolbox"
+        android:layout_below="@+id/tx_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@color/transparent_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbox"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/layout_toolbox_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_settings"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/settings"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tx_settings"
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/upload"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/tx_upload"
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_screen_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_toolbox"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:background="@color/transparent_white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_screen_monitoring"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tx_current_running"
+            android:textSize="25sp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/var_running_hour"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tx_placeholder"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/var_running_minute"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tx_placeholder"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/var_running_second"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tx_placeholder"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tx_hour"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tx_minute"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tx_second"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_run"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/btn_run"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_run" />
+
+        <Button
+            android:id="@+id/btn_terminate"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/btn_terminate"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_terminate" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_screen_monitoring"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:background="@color/transparent_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_monitoring_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_check_record"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tx_monitoring_history"
+            android:layout_marginTop="3dp"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
